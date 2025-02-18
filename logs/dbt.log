@@ -1,0 +1,1162 @@
+[0m16:53:42.708911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c9d160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10710bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10710bc50>]}
+
+
+============================== 16:53:42.712463 | d126940d-a06a-432d-bea5-c3f88411b1d3 ==============================
+[0m16:53:42.712463 [info ] [MainThread]: Running with dbt=1.9.2
+[0m16:53:42.712814 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/pl/dbt_cource/dbtlearn/logs', 'profiles_dir': '/Users/pl/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run-operation learn_logging', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:53:42.848047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd126940d-a06a-432d-bea5-c3f88411b1d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106314510>]}
+[0m16:53:42.875772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd126940d-a06a-432d-bea5-c3f88411b1d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f76f10>]}
+[0m16:53:42.882200 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:53:42.948630 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m16:53:43.124654 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:53:43.124934 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:53:43.128206 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn.example
+[0m16:53:43.166364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd126940d-a06a-432d-bea5-c3f88411b1d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108200950>]}
+[0m16:53:43.238222 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m16:53:43.240797 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m16:53:43.254623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd126940d-a06a-432d-bea5-c3f88411b1d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071f75c0>]}
+[0m16:53:43.254916 [info ] [MainThread]: Found 1 seed, 8 models, 1 snapshot, 1 analysis, 19 data tests, 3 sources, 819 macros
+[0m16:53:43.255078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd126940d-a06a-432d-bea5-c3f88411b1d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108254f30>]}
+[0m16:53:43.255383 [debug] [MainThread]: Acquiring new postgres connection 'macro_learn_logging'
+[0m16:53:43.255623 [debug] [MainThread]: Using postgres connection "macro_learn_logging"
+[0m16:53:43.255798 [debug] [MainThread]: On macro_learn_logging: BEGIN
+[0m16:53:43.255944 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:53:43.316009 [debug] [MainThread]: SQL status: BEGIN in 0.060 seconds
+[0m16:53:43.316294 [debug] [MainThread]: On macro_learn_logging: COMMIT
+[0m16:53:43.316520 [debug] [MainThread]: Using postgres connection "macro_learn_logging"
+[0m16:53:43.316677 [debug] [MainThread]: On macro_learn_logging: COMMIT
+[0m16:53:43.317099 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m16:53:43.319882 [debug] [MainThread]: Call your mom!
+[0m16:53:43.320074 [info ] [MainThread]: Call your dad!
+[0m16:53:43.320217 [info ] [MainThread]: Call your dad!
+[0m16:53:43.320360 [debug] [MainThread]: On macro_learn_logging: Close
+[0m16:53:43.324524 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /Users/pl/dbt_cource/dbtlearn/target/run_results.json
+[0m16:53:43.326558 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 0.68415815, "process_in_blocks": "0", "process_kernel_time": 0.294917, "process_mem_max_rss": "117784576", "process_out_blocks": "0", "process_user_time": 1.031742}
+[0m16:53:43.326845 [debug] [MainThread]: Command `dbt run-operation` succeeded at 16:53:43.326781 after 0.68 seconds
+[0m16:53:43.327001 [debug] [MainThread]: Connection 'macro_learn_logging' was properly closed.
+[0m16:53:43.327151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10809eb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ef7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082cfa10>]}
+[0m16:53:43.327314 [debug] [MainThread]: Flushing usage events
+[0m16:53:44.270645 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:13:23.109596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1211ed160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12250bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12250bc50>]}
+
+
+============================== 17:13:23.113473 | b23cbf51-2311-4928-a9cc-a27f4a7da625 ==============================
+[0m17:13:23.113473 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:13:23.113856 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pl/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/pl/dbt_cource/dbtlearn/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run-operation learn_variables', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:13:23.233524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b23cbf51-2311-4928-a9cc-a27f4a7da625', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121714510>]}
+[0m17:13:23.259727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b23cbf51-2311-4928-a9cc-a27f4a7da625', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122376f10>]}
+[0m17:13:23.262200 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:13:23.320973 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:13:23.506154 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m17:13:23.506552 [debug] [MainThread]: Partial parsing: added file: dbtlearn://macros/variables.sql
+[0m17:13:23.563979 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn.example
+[0m17:13:23.570828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b23cbf51-2311-4928-a9cc-a27f4a7da625', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123605d50>]}
+[0m17:13:23.644206 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:13:23.646633 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:13:23.661140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b23cbf51-2311-4928-a9cc-a27f4a7da625', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1225f75c0>]}
+[0m17:13:23.661407 [info ] [MainThread]: Found 1 seed, 8 models, 1 snapshot, 1 analysis, 19 data tests, 3 sources, 820 macros
+[0m17:13:23.661556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b23cbf51-2311-4928-a9cc-a27f4a7da625', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123654910>]}
+[0m17:13:23.661835 [debug] [MainThread]: Acquiring new postgres connection 'macro_learn_variables'
+[0m17:13:23.661983 [debug] [MainThread]: Using postgres connection "macro_learn_variables"
+[0m17:13:23.662097 [debug] [MainThread]: On macro_learn_variables: BEGIN
+[0m17:13:23.662207 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:13:23.761274 [debug] [MainThread]: SQL status: BEGIN in 0.099 seconds
+[0m17:13:23.761527 [debug] [MainThread]: On macro_learn_variables: COMMIT
+[0m17:13:23.761673 [debug] [MainThread]: Using postgres connection "macro_learn_variables"
+[0m17:13:23.761805 [debug] [MainThread]: On macro_learn_variables: COMMIT
+[0m17:13:23.762615 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m17:13:23.766290 [info ] [MainThread]: Hello Prashant
+[0m17:13:23.766512 [info ] [MainThread]: Hello dbt user NO USERNAME IS SET!!!
+[0m17:13:23.766663 [info ] [MainThread]: NOT in test
+[0m17:13:23.766969 [debug] [MainThread]: On macro_learn_variables: Close
+[0m17:13:23.771031 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /Users/pl/dbt_cource/dbtlearn/target/run_results.json
+[0m17:13:23.772781 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 0.736253, "process_in_blocks": "0", "process_kernel_time": 0.302842, "process_mem_max_rss": "124780544", "process_out_blocks": "0", "process_user_time": 1.009598}
+[0m17:13:23.773059 [debug] [MainThread]: Command `dbt run-operation` succeeded at 17:13:23.773001 after 0.74 seconds
+[0m17:13:23.773227 [debug] [MainThread]: Connection 'macro_learn_variables' was properly closed.
+[0m17:13:23.773394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1231b0460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1221f7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123718590>]}
+[0m17:13:23.773569 [debug] [MainThread]: Flushing usage events
+[0m17:13:24.934485 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:13:54.542684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041ed160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10550bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10550bc50>]}
+
+
+============================== 17:13:54.546622 | 6d477feb-9414-42a6-a075-3e574e80e807 ==============================
+[0m17:13:54.546622 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:13:54.546982 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pl/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/pl/dbt_cource/dbtlearn/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run-operation learn_variables --vars {user_name: zoltanctoth}', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:13:54.705879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6d477feb-9414-42a6-a075-3e574e80e807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104650510>]}
+[0m17:13:54.733553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6d477feb-9414-42a6-a075-3e574e80e807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105376f10>]}
+[0m17:13:54.734477 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:13:54.795204 [debug] [MainThread]: checksum: ccea456cacc1f244a8d0bb70539fb518842ceb696a5ce5b153999a341eb4541a, vars: {'user_name': 'zoltanctoth'}, profile: , target: , version: 1.9.2
+[0m17:13:54.871672 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:13:54.871933 [debug] [MainThread]: previous checksum: ccea456cacc1f244a8d0bb70539fb518842ceb696a5ce5b153999a341eb4541a, current checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18
+[0m17:13:54.872108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6d477feb-9414-42a6-a075-3e574e80e807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10672d550>]}
+[0m17:13:56.079396 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn.example
+[0m17:13:56.084794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6d477feb-9414-42a6-a075-3e574e80e807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10698f980>]}
+[0m17:13:56.151298 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:13:56.155929 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:13:56.169893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6d477feb-9414-42a6-a075-3e574e80e807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e690f0>]}
+[0m17:13:56.170129 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 19 data tests, 1 seed, 3 sources, 820 macros
+[0m17:13:56.170282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6d477feb-9414-42a6-a075-3e574e80e807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078aa4e0>]}
+[0m17:13:56.170555 [debug] [MainThread]: Acquiring new postgres connection 'macro_learn_variables'
+[0m17:13:56.170699 [debug] [MainThread]: Using postgres connection "macro_learn_variables"
+[0m17:13:56.170807 [debug] [MainThread]: On macro_learn_variables: BEGIN
+[0m17:13:56.170913 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:13:56.206443 [debug] [MainThread]: SQL status: BEGIN in 0.035 seconds
+[0m17:13:56.206716 [debug] [MainThread]: On macro_learn_variables: COMMIT
+[0m17:13:56.206870 [debug] [MainThread]: Using postgres connection "macro_learn_variables"
+[0m17:13:56.206998 [debug] [MainThread]: On macro_learn_variables: COMMIT
+[0m17:13:56.207394 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:13:56.209750 [info ] [MainThread]: Hello Prashant
+[0m17:13:56.209933 [info ] [MainThread]: Hello dbt user zoltanctoth!
+[0m17:13:56.210060 [info ] [MainThread]: NOT in test
+[0m17:13:56.210188 [debug] [MainThread]: On macro_learn_variables: Close
+[0m17:13:56.213707 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /Users/pl/dbt_cource/dbtlearn/target/run_results.json
+[0m17:13:56.215492 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 1.7356031, "process_in_blocks": "0", "process_kernel_time": 0.258501, "process_mem_max_rss": "136019968", "process_out_blocks": "0", "process_user_time": 1.977203}
+[0m17:13:56.215698 [debug] [MainThread]: Command `dbt run-operation` succeeded at 17:13:56.215653 after 1.74 seconds
+[0m17:13:56.215834 [debug] [MainThread]: Connection 'macro_learn_variables' was properly closed.
+[0m17:13:56.215969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052f7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10784c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10784c520>]}
+[0m17:13:56.216115 [debug] [MainThread]: Flushing usage events
+[0m17:13:57.215175 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:26:48.612415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aeed160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c20bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c20bc50>]}
+
+
+============================== 17:26:48.615649 | 03dd2ffa-993c-4106-852d-b77eca680203 ==============================
+[0m17:26:48.615649 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:26:48.615973 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/pl/dbt_cource/dbtlearn/logs', 'profiles_dir': '/Users/pl/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run-operation learn_variables', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:48.750697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03dd2ffa-993c-4106-852d-b77eca680203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b350510>]}
+[0m17:26:48.777098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03dd2ffa-993c-4106-852d-b77eca680203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c076f10>]}
+[0m17:26:48.778218 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:26:48.870157 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:26:48.958976 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:26:48.959298 [debug] [MainThread]: previous checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, current checksum: ccea456cacc1f244a8d0bb70539fb518842ceb696a5ce5b153999a341eb4541a
+[0m17:26:48.959449 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:26:48.959625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '03dd2ffa-993c-4106-852d-b77eca680203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d1e9550>]}
+[0m17:26:50.235010 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn.example
+[0m17:26:50.240892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '03dd2ffa-993c-4106-852d-b77eca680203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d58f980>]}
+[0m17:26:50.313538 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:26:50.316402 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:26:50.330659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '03dd2ffa-993c-4106-852d-b77eca680203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d9690f0>]}
+[0m17:26:50.330947 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 19 data tests, 1 seed, 3 sources, 820 macros
+[0m17:26:50.331102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03dd2ffa-993c-4106-852d-b77eca680203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dbaa4e0>]}
+[0m17:26:50.331391 [debug] [MainThread]: Acquiring new postgres connection 'macro_learn_variables'
+[0m17:26:50.331544 [debug] [MainThread]: Using postgres connection "macro_learn_variables"
+[0m17:26:50.331658 [debug] [MainThread]: On macro_learn_variables: BEGIN
+[0m17:26:50.331768 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:26:50.376919 [debug] [MainThread]: SQL status: BEGIN in 0.045 seconds
+[0m17:26:50.377213 [debug] [MainThread]: On macro_learn_variables: COMMIT
+[0m17:26:50.377369 [debug] [MainThread]: Using postgres connection "macro_learn_variables"
+[0m17:26:50.377500 [debug] [MainThread]: On macro_learn_variables: COMMIT
+[0m17:26:50.377920 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:26:50.380379 [info ] [MainThread]: Hello Prashant
+[0m17:26:50.380589 [info ] [MainThread]: Hello dbt user default_username!
+[0m17:26:50.380907 [info ] [MainThread]: NOT in test
+[0m17:26:50.381122 [debug] [MainThread]: On macro_learn_variables: Close
+[0m17:26:50.384869 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /Users/pl/dbt_cource/dbtlearn/target/run_results.json
+[0m17:26:50.387787 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 1.8338369, "process_in_blocks": "0", "process_kernel_time": 0.336037, "process_mem_max_rss": "137281536", "process_out_blocks": "0", "process_user_time": 2.117295}
+[0m17:26:50.388547 [debug] [MainThread]: Command `dbt run-operation` succeeded at 17:26:50.388152 after 1.83 seconds
+[0m17:26:50.389029 [debug] [MainThread]: Connection 'macro_learn_variables' was properly closed.
+[0m17:26:50.389532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bff7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11db4c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11db4c520>]}
+[0m17:26:50.389750 [debug] [MainThread]: Flushing usage events
+[0m17:26:51.585476 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:31:30.361493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107345160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118813b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118813c50>]}
+
+
+============================== 17:31:30.365089 | 309baed1-60c3-4845-99f3-795fc90f624c ==============================
+[0m17:31:30.365089 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:31:30.365435 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pl/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/pl/dbt_cource/dbtlearn/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select fct_reviews.sql', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:31:30.487929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '309baed1-60c3-4845-99f3-795fc90f624c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b14510>]}
+[0m17:31:30.515875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '309baed1-60c3-4845-99f3-795fc90f624c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118676f10>]}
+[0m17:31:30.516743 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:31:30.579063 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:31:30.770231 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:31:30.770648 [debug] [MainThread]: Partial parsing: updated file: dbtlearn://models/fct/fct_reviews.sql
+[0m17:31:30.925393 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn.example
+[0m17:31:30.931787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '309baed1-60c3-4845-99f3-795fc90f624c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1197e9650>]}
+[0m17:31:31.008095 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:31:31.021500 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:31:31.068424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '309baed1-60c3-4845-99f3-795fc90f624c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1188f75c0>]}
+[0m17:31:31.068775 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 19 data tests, 1 seed, 3 sources, 820 macros
+[0m17:31:31.068933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '309baed1-60c3-4845-99f3-795fc90f624c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11999b850>]}
+[0m17:31:31.071051 [info ] [MainThread]: 
+[0m17:31:31.072818 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:31:31.073251 [info ] [MainThread]: 
+[0m17:31:31.075277 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:31:31.076651 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m17:31:31.158568 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m17:31:31.158817 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:31:31.158945 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:31:31.226788 [debug] [ThreadPool]: SQL status: SELECT 24 in 0.068 seconds
+[0m17:31:31.227814 [debug] [ThreadPool]: On list_postgres: Close
+[0m17:31:31.231564 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_public)
+[0m17:31:31.234898 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m17:31:31.235087 [debug] [ThreadPool]: On list_postgres_public: BEGIN
+[0m17:31:31.235212 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:31:31.244658 [debug] [ThreadPool]: SQL status: BEGIN in 0.009 seconds
+[0m17:31:31.244954 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m17:31:31.245113 [debug] [ThreadPool]: On list_postgres_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_postgres_public"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m17:31:31.259826 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.014 seconds
+[0m17:31:31.260770 [debug] [ThreadPool]: On list_postgres_public: ROLLBACK
+[0m17:31:31.261312 [debug] [ThreadPool]: On list_postgres_public: Close
+[0m17:31:31.265537 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:31.265833 [debug] [MainThread]: On master: BEGIN
+[0m17:31:31.265970 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:31:31.279035 [debug] [MainThread]: SQL status: BEGIN in 0.013 seconds
+[0m17:31:31.279339 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:31.279553 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:31:31.292160 [debug] [MainThread]: SQL status: SELECT 2 in 0.012 seconds
+[0m17:31:31.293136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '309baed1-60c3-4845-99f3-795fc90f624c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119aad710>]}
+[0m17:31:31.293353 [debug] [MainThread]: On master: ROLLBACK
+[0m17:31:31.293898 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:31.294145 [debug] [MainThread]: On master: BEGIN
+[0m17:31:31.294733 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m17:31:31.294871 [debug] [MainThread]: On master: COMMIT
+[0m17:31:31.294988 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:31.295090 [debug] [MainThread]: On master: COMMIT
+[0m17:31:31.295442 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:31:31.295605 [debug] [MainThread]: On master: Close
+[0m17:31:31.296392 [debug] [Thread-1 (]: Began running node model.dbtlearn.fct_reviews
+[0m17:31:31.296684 [info ] [Thread-1 (]: 1 of 1 START sql incremental model public.fct_reviews .......................... [RUN]
+[0m17:31:31.296943 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_public, now model.dbtlearn.fct_reviews)
+[0m17:31:31.297163 [debug] [Thread-1 (]: Began compiling node model.dbtlearn.fct_reviews
+[0m17:31:31.304445 [info ] [Thread-1 (]: Loading "postgres"."public"."fct_reviews" incrementally (all missing dates)
+[0m17:31:31.305804 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtlearn.fct_reviews"
+[0m17:31:31.309902 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtlearn.fct_reviews"
+[0m17:31:31.310618 [debug] [Thread-1 (]: Began executing node model.dbtlearn.fct_reviews
+[0m17:31:31.396255 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:31.396722 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+    
+  
+    
+
+  create temporary table "fct_reviews__dbt_tmp173131329728"
+  
+  
+    as
+  
+  (
+    
+
+WITH  __dbt__cte__src_reviews as (
+WITH raw_reviews AS (
+       select * from "postgres"."public"."reviews"
+
+)
+SELECT
+    listing_id,
+    DATE AS review_date,
+    reviewer_name,
+    comments AS review_text,
+    sentiment AS review_sentiment
+FROM
+    raw_reviews
+), src_reviews AS (
+  SELECT * FROM __dbt__cte__src_reviews
+)
+SELECT
+  md5(cast(coalesce(cast(listing_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(review_date as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reviewer_name as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(review_text as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as review_id,
+  *
+FROM src_reviews
+WHERE review_text is not null
+
+  
+    AND review_date > (select max(review_date) from "postgres"."public"."fct_reviews")
+    
+  
+
+  );
+  
+  
+[0m17:31:31.396981 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:31:32.221098 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.824 seconds
+[0m17:31:32.237837 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:32.238269 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: BEGIN
+[0m17:31:32.239491 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:31:32.239752 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:32.239928 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews__dbt_tmp173131329728'
+        
+      order by ordinal_position
+
+  
+[0m17:31:32.259184 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.019 seconds
+[0m17:31:32.262672 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:32.262901 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:31:32.267476 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.004 seconds
+[0m17:31:32.274950 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:32.275237 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews__dbt_tmp173131329728'
+        
+      order by ordinal_position
+
+  
+[0m17:31:32.277853 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:31:32.280015 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:32.280243 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:31:32.282400 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:31:32.288165 [debug] [Thread-1 (]: 
+    In "postgres"."public"."fct_reviews":
+        Schema changed: False
+        Source columns not in target: []
+        Target columns not in source: []
+        New column types: []
+  
+[0m17:31:32.295785 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtlearn.fct_reviews"
+[0m17:31:32.297176 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:32.297440 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      insert into "postgres"."public"."fct_reviews" ("review_id", "listing_id", "review_date", "reviewer_name", "review_text", "review_sentiment")
+    (
+        select "review_id", "listing_id", "review_date", "reviewer_name", "review_text", "review_sentiment"
+        from "fct_reviews__dbt_tmp173131329728"
+    )
+
+
+  
+[0m17:31:32.298575 [debug] [Thread-1 (]: SQL status: INSERT 0 0 in 0.001 seconds
+[0m17:31:32.308672 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: COMMIT
+[0m17:31:32.308968 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:32.309223 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: COMMIT
+[0m17:31:32.312832 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m17:31:32.314036 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: Close
+[0m17:31:32.315314 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '309baed1-60c3-4845-99f3-795fc90f624c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1198e6690>]}
+[0m17:31:32.315742 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model public.fct_reviews ..................... [[32mINSERT 0 0[0m in 1.02s]
+[0m17:31:32.316041 [debug] [Thread-1 (]: Finished running node model.dbtlearn.fct_reviews
+[0m17:31:32.316774 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:32.316964 [debug] [MainThread]: On master: BEGIN
+[0m17:31:32.317100 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:31:32.338908 [debug] [MainThread]: SQL status: BEGIN in 0.022 seconds
+[0m17:31:32.339198 [debug] [MainThread]: On master: COMMIT
+[0m17:31:32.339339 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:32.339458 [debug] [MainThread]: On master: COMMIT
+[0m17:31:32.339969 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:31:32.340211 [debug] [MainThread]: On master: Close
+[0m17:31:32.340476 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:31:32.340612 [debug] [MainThread]: Connection 'model.dbtlearn.fct_reviews' was properly closed.
+[0m17:31:32.340744 [info ] [MainThread]: 
+[0m17:31:32.340876 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 1.27 seconds (1.27s).
+[0m17:31:32.341193 [debug] [MainThread]: Command end result
+[0m17:31:32.365526 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:31:32.369584 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:31:32.375616 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pl/dbt_cource/dbtlearn/target/run_results.json
+[0m17:31:32.375780 [info ] [MainThread]: 
+[0m17:31:32.375957 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:31:32.376077 [info ] [MainThread]: 
+[0m17:31:32.376212 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:31:32.379628 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.0871663, "process_in_blocks": "0", "process_kernel_time": 0.339246, "process_mem_max_rss": "128040960", "process_out_blocks": "0", "process_user_time": 1.359908}
+[0m17:31:32.379943 [debug] [MainThread]: Command `dbt run` succeeded at 17:31:32.379886 after 2.09 seconds
+[0m17:31:32.380140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119c88d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119475d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119475e50>]}
+[0m17:31:32.380320 [debug] [MainThread]: Flushing usage events
+[0m17:31:33.311103 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:31:51.832791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1038d9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104737b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104737c50>]}
+
+
+============================== 17:31:51.836057 | 5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a ==============================
+[0m17:31:51.836057 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:31:51.836378 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pl/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/pl/dbt_cource/dbtlearn/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select fct_reviews.sql', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:31:51.953117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c3c510>]}
+[0m17:31:51.981526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10459ef10>]}
+[0m17:31:51.985371 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:31:52.051118 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m17:31:52.214624 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:31:52.214897 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:31:52.217868 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn.example
+[0m17:31:52.256620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105570550>]}
+[0m17:31:52.329094 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:31:52.331893 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:31:52.348737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10481f7a0>]}
+[0m17:31:52.349004 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 19 data tests, 1 seed, 3 sources, 820 macros
+[0m17:31:52.349169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d6190>]}
+[0m17:31:52.350269 [info ] [MainThread]: 
+[0m17:31:52.350435 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:31:52.350555 [info ] [MainThread]: 
+[0m17:31:52.350806 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:31:52.351267 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m17:31:52.411960 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m17:31:52.412194 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:31:52.412325 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:31:52.458088 [debug] [ThreadPool]: SQL status: SELECT 26 in 0.046 seconds
+[0m17:31:52.458977 [debug] [ThreadPool]: On list_postgres: Close
+[0m17:31:52.461555 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_public)
+[0m17:31:52.464736 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m17:31:52.464937 [debug] [ThreadPool]: On list_postgres_public: BEGIN
+[0m17:31:52.465061 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:31:52.478171 [debug] [ThreadPool]: SQL status: BEGIN in 0.013 seconds
+[0m17:31:52.478459 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m17:31:52.478634 [debug] [ThreadPool]: On list_postgres_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_postgres_public"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m17:31:52.483116 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.004 seconds
+[0m17:31:52.483950 [debug] [ThreadPool]: On list_postgres_public: ROLLBACK
+[0m17:31:52.484313 [debug] [ThreadPool]: On list_postgres_public: Close
+[0m17:31:52.488223 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:52.488437 [debug] [MainThread]: On master: BEGIN
+[0m17:31:52.488569 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:31:52.496936 [debug] [MainThread]: SQL status: BEGIN in 0.008 seconds
+[0m17:31:52.497125 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:52.497317 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:31:52.502610 [debug] [MainThread]: SQL status: SELECT 2 in 0.005 seconds
+[0m17:31:52.503586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a08870>]}
+[0m17:31:52.503814 [debug] [MainThread]: On master: ROLLBACK
+[0m17:31:52.504208 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:52.504337 [debug] [MainThread]: On master: BEGIN
+[0m17:31:52.504862 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m17:31:52.505008 [debug] [MainThread]: On master: COMMIT
+[0m17:31:52.505140 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:52.505253 [debug] [MainThread]: On master: COMMIT
+[0m17:31:52.505592 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:31:52.505722 [debug] [MainThread]: On master: Close
+[0m17:31:52.506413 [debug] [Thread-1 (]: Began running node model.dbtlearn.fct_reviews
+[0m17:31:52.506728 [info ] [Thread-1 (]: 1 of 1 START sql incremental model public.fct_reviews .......................... [RUN]
+[0m17:31:52.506960 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_public, now model.dbtlearn.fct_reviews)
+[0m17:31:52.507293 [debug] [Thread-1 (]: Began compiling node model.dbtlearn.fct_reviews
+[0m17:31:52.522398 [info ] [Thread-1 (]: Loading "postgres"."public"."fct_reviews" incrementally (all missing dates)
+[0m17:31:52.523955 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtlearn.fct_reviews"
+[0m17:31:52.531888 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtlearn.fct_reviews"
+[0m17:31:52.532530 [debug] [Thread-1 (]: Began executing node model.dbtlearn.fct_reviews
+[0m17:31:52.561429 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.561772 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+    
+  
+    
+
+  create temporary table "fct_reviews__dbt_tmp173152548442"
+  
+  
+    as
+  
+  (
+    
+
+WITH  __dbt__cte__src_reviews as (
+WITH raw_reviews AS (
+       select * from "postgres"."public"."reviews"
+
+)
+SELECT
+    listing_id,
+    DATE AS review_date,
+    reviewer_name,
+    comments AS review_text,
+    sentiment AS review_sentiment
+FROM
+    raw_reviews
+), src_reviews AS (
+  SELECT * FROM __dbt__cte__src_reviews
+)
+SELECT
+  md5(cast(coalesce(cast(listing_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(review_date as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reviewer_name as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(review_text as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as review_id,
+  *
+FROM src_reviews
+WHERE review_text is not null
+
+  
+    AND review_date > (select max(review_date) from "postgres"."public"."fct_reviews")
+    
+  
+
+  );
+  
+  
+[0m17:31:52.561960 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:31:52.659083 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.097 seconds
+[0m17:31:52.665950 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.666179 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: BEGIN
+[0m17:31:52.667036 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:31:52.667207 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.667360 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews__dbt_tmp173152548442'
+        
+      order by ordinal_position
+
+  
+[0m17:31:52.679655 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.012 seconds
+[0m17:31:52.682834 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.683035 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:31:52.685393 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:31:52.693318 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.693551 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews__dbt_tmp173152548442'
+        
+      order by ordinal_position
+
+  
+[0m17:31:52.695537 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:31:52.697648 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.697880 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:31:52.699928 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:31:52.705029 [debug] [Thread-1 (]: 
+    In "postgres"."public"."fct_reviews":
+        Schema changed: False
+        Source columns not in target: []
+        Target columns not in source: []
+        New column types: []
+  
+[0m17:31:52.710864 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtlearn.fct_reviews"
+[0m17:31:52.711498 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.711696 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      insert into "postgres"."public"."fct_reviews" ("review_id", "listing_id", "review_date", "reviewer_name", "review_text", "review_sentiment")
+    (
+        select "review_id", "listing_id", "review_date", "reviewer_name", "review_text", "review_sentiment"
+        from "fct_reviews__dbt_tmp173152548442"
+    )
+
+
+  
+[0m17:31:52.712639 [debug] [Thread-1 (]: SQL status: INSERT 0 0 in 0.001 seconds
+[0m17:31:52.721096 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: COMMIT
+[0m17:31:52.721318 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:31:52.721491 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: COMMIT
+[0m17:31:52.723014 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m17:31:52.724065 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: Close
+[0m17:31:52.725194 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ad0e7f1-3198-4748-a6fc-f2bb8bc64b5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056a1d90>]}
+[0m17:31:52.725572 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model public.fct_reviews ..................... [[32mINSERT 0 0[0m in 0.22s]
+[0m17:31:52.725888 [debug] [Thread-1 (]: Finished running node model.dbtlearn.fct_reviews
+[0m17:31:52.726580 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:52.726742 [debug] [MainThread]: On master: BEGIN
+[0m17:31:52.726862 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:31:52.738044 [debug] [MainThread]: SQL status: BEGIN in 0.011 seconds
+[0m17:31:52.738282 [debug] [MainThread]: On master: COMMIT
+[0m17:31:52.738429 [debug] [MainThread]: Using postgres connection "master"
+[0m17:31:52.738548 [debug] [MainThread]: On master: COMMIT
+[0m17:31:52.738914 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:31:52.739089 [debug] [MainThread]: On master: Close
+[0m17:31:52.739311 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:31:52.739437 [debug] [MainThread]: Connection 'model.dbtlearn.fct_reviews' was properly closed.
+[0m17:31:52.739580 [info ] [MainThread]: 
+[0m17:31:52.739736 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 0.39 seconds (0.39s).
+[0m17:31:52.740162 [debug] [MainThread]: Command end result
+[0m17:31:52.798300 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:31:52.799543 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:31:52.802445 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pl/dbt_cource/dbtlearn/target/run_results.json
+[0m17:31:52.802589 [info ] [MainThread]: 
+[0m17:31:52.802761 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:31:52.802899 [info ] [MainThread]: 
+[0m17:31:52.803037 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:31:52.805906 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.0322139, "process_in_blocks": "0", "process_kernel_time": 0.278916, "process_mem_max_rss": "126926848", "process_out_blocks": "0", "process_user_time": 1.152809}
+[0m17:31:52.806077 [debug] [MainThread]: Command `dbt run` succeeded at 17:31:52.806039 after 1.03 seconds
+[0m17:31:52.806246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059d01b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d49270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d48d70>]}
+[0m17:31:52.806393 [debug] [MainThread]: Flushing usage events
+[0m17:31:53.729869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:37:08.206458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10469d160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e13b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e13c50>]}
+
+
+============================== 17:37:08.210251 | d82d8510-b78f-40e9-8d82-4832f902cc72 ==============================
+[0m17:37:08.210251 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:37:08.210602 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/pl/dbt_cource/dbtlearn/logs', 'debug': 'False', 'profiles_dir': '/Users/pl/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select fct_reviews.sql --vars {start_date:"2024-01-15 00:00:00",end_date:"2024-03-15 23:59:59"}', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:37:08.331598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107014510>]}
+[0m17:37:08.360813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c76f10>]}
+[0m17:37:08.361773 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:37:08.421951 [debug] [MainThread]: checksum: 0dfe3f7f51927cec9e8d9ef82aebcfb29a9e78b93614ff038250bf7e47f48692, vars: {'end_date:"2024-03-15 23:59:59"': None,
+ 'start_date:"2024-01-15 00:00:00"': None}, profile: , target: , version: 1.9.2
+[0m17:37:08.504876 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:37:08.505183 [debug] [MainThread]: previous checksum: 0dfe3f7f51927cec9e8d9ef82aebcfb29a9e78b93614ff038250bf7e47f48692, current checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18
+[0m17:37:08.505360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108df5550>]}
+[0m17:37:09.754181 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtlearn.example
+[0m17:37:09.759498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10988fd40>]}
+[0m17:37:09.828710 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:37:09.831161 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:37:09.851329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d9d710>]}
+[0m17:37:09.851576 [info ] [MainThread]: Found 8 models, 1 snapshot, 1 analysis, 19 data tests, 1 seed, 3 sources, 820 macros
+[0m17:37:09.851733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e1cae0>]}
+[0m17:37:09.852787 [info ] [MainThread]: 
+[0m17:37:09.852935 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:37:09.853047 [info ] [MainThread]: 
+[0m17:37:09.853265 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:37:09.853674 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m17:37:09.910699 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m17:37:09.910950 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:37:09.911086 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:37:09.958338 [debug] [ThreadPool]: SQL status: SELECT 28 in 0.047 seconds
+[0m17:37:09.959339 [debug] [ThreadPool]: On list_postgres: Close
+[0m17:37:09.961824 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_public)
+[0m17:37:09.964954 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m17:37:09.965142 [debug] [ThreadPool]: On list_postgres_public: BEGIN
+[0m17:37:09.965289 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:37:09.974262 [debug] [ThreadPool]: SQL status: BEGIN in 0.009 seconds
+[0m17:37:09.974473 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m17:37:09.974625 [debug] [ThreadPool]: On list_postgres_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_postgres_public"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m17:37:09.978877 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.004 seconds
+[0m17:37:09.979703 [debug] [ThreadPool]: On list_postgres_public: ROLLBACK
+[0m17:37:09.980032 [debug] [ThreadPool]: On list_postgres_public: Close
+[0m17:37:09.985076 [debug] [MainThread]: Using postgres connection "master"
+[0m17:37:09.985306 [debug] [MainThread]: On master: BEGIN
+[0m17:37:09.985447 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:37:09.993765 [debug] [MainThread]: SQL status: BEGIN in 0.008 seconds
+[0m17:37:09.993929 [debug] [MainThread]: Using postgres connection "master"
+[0m17:37:09.994116 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:37:09.998925 [debug] [MainThread]: SQL status: SELECT 2 in 0.005 seconds
+[0m17:37:09.999780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e52450>]}
+[0m17:37:10.000000 [debug] [MainThread]: On master: ROLLBACK
+[0m17:37:10.000404 [debug] [MainThread]: Using postgres connection "master"
+[0m17:37:10.000620 [debug] [MainThread]: On master: BEGIN
+[0m17:37:10.001120 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m17:37:10.001296 [debug] [MainThread]: On master: COMMIT
+[0m17:37:10.001426 [debug] [MainThread]: Using postgres connection "master"
+[0m17:37:10.001549 [debug] [MainThread]: On master: COMMIT
+[0m17:37:10.001887 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:37:10.002050 [debug] [MainThread]: On master: Close
+[0m17:37:10.002751 [debug] [Thread-1 (]: Began running node model.dbtlearn.fct_reviews
+[0m17:37:10.003013 [info ] [Thread-1 (]: 1 of 1 START sql incremental model public.fct_reviews .......................... [RUN]
+[0m17:37:10.003237 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_public, now model.dbtlearn.fct_reviews)
+[0m17:37:10.003397 [debug] [Thread-1 (]: Began compiling node model.dbtlearn.fct_reviews
+[0m17:37:10.010335 [info ] [Thread-1 (]: Loading "postgres"."public"."fct_reviews" incrementally (all missing dates)
+[0m17:37:10.011685 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtlearn.fct_reviews"
+[0m17:37:10.015637 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtlearn.fct_reviews"
+[0m17:37:10.016843 [debug] [Thread-1 (]: Began executing node model.dbtlearn.fct_reviews
+[0m17:37:10.043907 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.044193 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+    
+  
+    
+
+  create temporary table "fct_reviews__dbt_tmp173710031876"
+  
+  
+    as
+  
+  (
+    
+
+WITH  __dbt__cte__src_reviews as (
+WITH raw_reviews AS (
+       select * from "postgres"."public"."reviews"
+
+)
+SELECT
+    listing_id,
+    DATE AS review_date,
+    reviewer_name,
+    comments AS review_text,
+    sentiment AS review_sentiment
+FROM
+    raw_reviews
+), src_reviews AS (
+  SELECT * FROM __dbt__cte__src_reviews
+)
+SELECT
+  md5(cast(coalesce(cast(listing_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(review_date as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(reviewer_name as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(review_text as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as review_id,
+  *
+FROM src_reviews
+WHERE review_text is not null
+
+  
+    AND review_date > (select max(review_date) from "postgres"."public"."fct_reviews")
+    
+  
+
+  );
+  
+  
+[0m17:37:10.044370 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:37:10.224051 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.180 seconds
+[0m17:37:10.232067 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.232296 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: BEGIN
+[0m17:37:10.233319 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:37:10.233664 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.233847 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews__dbt_tmp173710031876'
+        
+      order by ordinal_position
+
+  
+[0m17:37:10.243872 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.010 seconds
+[0m17:37:10.248208 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.248442 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:37:10.250952 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:37:10.258145 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.258426 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews__dbt_tmp173710031876'
+        
+      order by ordinal_position
+
+  
+[0m17:37:10.260438 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:37:10.262383 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.262579 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "postgres".INFORMATION_SCHEMA.columns
+      where table_name = 'fct_reviews'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:37:10.264299 [debug] [Thread-1 (]: SQL status: SELECT 6 in 0.002 seconds
+[0m17:37:10.269041 [debug] [Thread-1 (]: 
+    In "postgres"."public"."fct_reviews":
+        Schema changed: False
+        Source columns not in target: []
+        Target columns not in source: []
+        New column types: []
+  
+[0m17:37:10.274260 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtlearn.fct_reviews"
+[0m17:37:10.274975 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.275159 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "model.dbtlearn.fct_reviews"} */
+
+      insert into "postgres"."public"."fct_reviews" ("review_id", "listing_id", "review_date", "reviewer_name", "review_text", "review_sentiment")
+    (
+        select "review_id", "listing_id", "review_date", "reviewer_name", "review_text", "review_sentiment"
+        from "fct_reviews__dbt_tmp173710031876"
+    )
+
+
+  
+[0m17:37:10.276047 [debug] [Thread-1 (]: SQL status: INSERT 0 0 in 0.001 seconds
+[0m17:37:10.283444 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: COMMIT
+[0m17:37:10.283645 [debug] [Thread-1 (]: Using postgres connection "model.dbtlearn.fct_reviews"
+[0m17:37:10.283798 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: COMMIT
+[0m17:37:10.285746 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:37:10.286692 [debug] [Thread-1 (]: On model.dbtlearn.fct_reviews: Close
+[0m17:37:10.287869 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd82d8510-b78f-40e9-8d82-4832f902cc72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e56830>]}
+[0m17:37:10.288232 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model public.fct_reviews ..................... [[32mINSERT 0 0[0m in 0.28s]
+[0m17:37:10.288527 [debug] [Thread-1 (]: Finished running node model.dbtlearn.fct_reviews
+[0m17:37:10.289208 [debug] [MainThread]: Using postgres connection "master"
+[0m17:37:10.289380 [debug] [MainThread]: On master: BEGIN
+[0m17:37:10.289504 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:37:10.301825 [debug] [MainThread]: SQL status: BEGIN in 0.012 seconds
+[0m17:37:10.302069 [debug] [MainThread]: On master: COMMIT
+[0m17:37:10.302209 [debug] [MainThread]: Using postgres connection "master"
+[0m17:37:10.302330 [debug] [MainThread]: On master: COMMIT
+[0m17:37:10.302775 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:37:10.303496 [debug] [MainThread]: On master: Close
+[0m17:37:10.303761 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:37:10.303900 [debug] [MainThread]: Connection 'model.dbtlearn.fct_reviews' was properly closed.
+[0m17:37:10.304059 [info ] [MainThread]: 
+[0m17:37:10.304213 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 0.45 seconds (0.45s).
+[0m17:37:10.304820 [debug] [MainThread]: Command end result
+[0m17:37:10.331039 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pl/dbt_cource/dbtlearn/target/manifest.json
+[0m17:37:10.332297 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pl/dbt_cource/dbtlearn/target/semantic_manifest.json
+[0m17:37:10.335336 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pl/dbt_cource/dbtlearn/target/run_results.json
+[0m17:37:10.335489 [info ] [MainThread]: 
+[0m17:37:10.335676 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:37:10.335833 [info ] [MainThread]: 
+[0m17:37:10.336077 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:37:10.339400 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.192705, "process_in_blocks": "0", "process_kernel_time": 0.307461, "process_mem_max_rss": "141197312", "process_out_blocks": "0", "process_user_time": 2.170122}
+[0m17:37:10.339687 [debug] [MainThread]: Command `dbt run` succeeded at 17:37:10.339622 after 2.19 seconds
+[0m17:37:10.339885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109edc9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1920f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e88450>]}
+[0m17:37:10.340058 [debug] [MainThread]: Flushing usage events
+[0m17:37:11.438294 [debug] [MainThread]: An error was encountered while trying to flush usage events
